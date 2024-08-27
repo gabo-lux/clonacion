@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes con Bootstrap 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 500px; /* Ajusta esta altura según tus necesidades */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/avion.jfif" class="d-block w-100" alt="MUSTANG GT 2024">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MUSTANG GT 2024</h5>
+                <p>Motor: V8 de 5.0 litros<br>
+                   Potencia: Aproximadamente 486 caballos de fuerza<br>
+                   Torque: Aproximadamente 415 lb-pie<br>
+                   Transmisión: Manual de 6 velocidades o automática de 10 velocidades<br>
+                   Aceleración (0-100 km/h): Aproximadamente 4.0 segundos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/hola.jpg" class="d-block w-100" alt="SUPRA MK4">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>SUPRA MK4</h5>
+                <p>Motor: 3.0 litros, 6 cilindros en línea (2JZ-GTE)<br>
+                   Potencia: Aproximadamente 276 caballos de fuerza (versión japonesa) / 320 caballos de fuerza (versión estadounidense)<br>
+                   Torque: Aproximadamente 318 lb-pie<br>
+                   Transmisión: Manual de 6 velocidades o automática de 4 velocidades<br>
+                   Aceleración (0-100 km/h): Aproximadamente 4.6 segundos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/aventador.jpg" class="d-block w-100" alt="LAMBORGHINI AVENTADOR">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>LAMBORGHINI AVENTADOR</h5>
+                <p>Motor: V12 de 6.5 litros<br>
+                   Potencia: Aproximadamente 730 a 770 caballos de fuerza<br>
+                   Torque: Aproximadamente 509 a 531 lb-pie<br>
+                   Transmisión: Automática de 7 velocidades<br>
+                   Aceleración (0-100 km/h): Aproximadamente 2.8-3.0 segundos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/lancer.jpg" class="d-block w-100" alt="MITSUBISHI LANCER EVO">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MITSUBISHI LANCER EVO</h5>
+                <p>Motor: 2.0 litros, 4 cilindros en línea (4B11T)<br>
+                   Potencia: Aproximadamente 291 caballos de fuerza a 6500 rpm<br>
+                   Torque: Aproximadamente 300 lb-pie a 4000 rpm<br>
+                   Transmisión: Manual de 5 velocidades o automática de 6 velocidades<br>
+                   Tracción: Integral (AWD) con el sistema S-AWC</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/koen.jpg" class="d-block w-100" alt="KOENIGSEGG">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>KOENIGSEGG</h5>
+                <p>Motor: V8 biturbo de 5.0 litros<br>
+                   Potencia: 1280 caballos de fuerza con gasolina de 95 octanos / 1600 caballos de fuerza con E85<br>
+                   Torque: 1106 lb-pie con E85<br>
+                   Transmisión: Light Speed Transmission (LST) de 9 velocidades<br>
+                   Tracción: Trasera (RWD)</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/sky.jpeg" class="d-block w-100" alt="NISSAN SKYLINE GTR">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>NISSAN SKYLINE GTR</h5>
+                <p>Motor: RB26DETT<br>
+                   Tipo: 6 cilindros en línea, 24 válvulas, doble turbocompresor<br>
+                   Cilindrada: 2.6 litros<br>
+                   Potencia: Aproximadamente 280 hp (210 kW)<br>
+                   Par: 368 Nm</p>
+            </div>
+        </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
